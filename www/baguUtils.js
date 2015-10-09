@@ -1,4 +1,3 @@
-xxx
 angular.module('baguUtils', ['auth0', 'angular-storage', 'angular-jwt'])
     .service('baguAuth0Service', ['$q', '$http', '$rootScope', 'auth', 'store', baguAuth0Service])
     .service('baguCommonService', ['$mdDialog', '$mdToast', baguCommonService])
