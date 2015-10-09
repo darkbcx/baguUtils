@@ -2,7 +2,7 @@
   "name": "baguUtils",
   "version": "1.0.0",
   "description": "angular tools for bagubagu",
-  "main": "index.js",
+  "main": "www/baguUtils.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "live-server --port=3040 www"
