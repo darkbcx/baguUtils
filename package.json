@@ -1,0 +1,26 @@
+{
+  "name": "baguUtils",
+  "version": "1.0.0",
+  "description": "angular tools for bagubagu",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "live-server --port=3040 www"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/darkbcx/baguUtils.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/darkbcx/baguUtils/issues"
+  },
+  "homepage": "https://github.com/darkbcx/baguUtils",
+  "jspm": {
+    "directories": {
+      "baseURL": "www"
+    },
+    "dependencies": {}
+  }
+}
