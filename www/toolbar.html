@@ -1,0 +1,65 @@
+<md-toolbar class="toolbar-fixed">
+    <div class="md-toolbar-tools">
+        <md-button aria-label="menu" ng-click="toggleMenu()" class="md-icon-button"
+                   style="line-height:0"
+                   hide-gt-md>
+            <ng-md-icon icon="menu" style="fill:white;" size="24"></ng-md-icon>
+        </md-button>
+        {{title}}
+        <span flex></span>
+        <md-menu md-position-mode="target-right target" class="menu-icon">
+            <md-button class="md-icon-button" style="line-height:0" aria-label="apps"
+                       ng-click="$mdOpenMenu()">
+                <ng-md-icon icon="apps" style="fill:white; " size="26"></ng-md-icon>
+
+            </md-button>
+            <md-menu-content width="4">
+                <md-menu-item>
+                    <md-button layout="row">
+                           <span flex="20">
+                               <ng-md-icon icon="business" style="fill:grey;" size="26"></ng-md-icon>
+                           </span>
+                            <span flex>
+                              Book Hotel
+                           </span>
+                    </md-button>
+                </md-menu-item>
+            </md-menu-content>
+        </md-menu>
+        <md-menu md-position-mode="target-right target" class="menu-icon2">
+            <md-button class="md-icon-button" style="line-height:0; margin:0px;" aria-label="More"
+                       ng-click="$mdOpenMenu()">
+                <img style="height: 40px;width: auto;" src="{{loggedInUser.picture || myPath + 'default_user.png'}}"
+                     class="profile"/>
+            </md-button>
+            <md-menu-content width="4">
+                <md-menu-item>
+                    <md-list class="member-profile-menu">
+                        <md-list-item class="md-3-line">
+                            <img src="{{loggedInUser.picture || myPath + 'default_user.png'}}"
+                                 class="md-avatar"/>
+
+                            <div class="md-list-item-text">
+                                <p>{{loggedInUser.nickname || loggedInUser.name || '-'}}</p>
+
+                                <p>{{loggedInUser.email || '-'}}</p>
+                            </div>
+                        </md-list-item>
+                    </md-list>
+
+                </md-menu-item>
+                <br> <br>
+                <md-divider></md-divider>
+                <md-menu-item>
+                    <md-button layout="row" ng-click="logout()"><span flex> Logout</span> <span
+                            flex="20"><ng-md-icon
+                            icon="exit_to_app"
+                            style="fill:grey; float:right"
+                            size="30"></ng-md-icon></span>
+                    </md-button>
+                </md-menu-item>
+
+            </md-menu-content>
+        </md-menu>
+    </div>
+</md-toolbar>
